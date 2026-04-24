@@ -1,3 +1,11 @@
-const top_bar = document.getElementById("top_bar");
-const top_bar_style = window.getComputedStyle(top_bar);
-top_bar.style.height = (parseFloat(top_bar_style.width))/20 + "px";
+const threedot = document.getElementById("threedot");
+const search = document.getElementById("search");
+const visible = document.getElementById("visible");
+const hidden = document.getElementById("hidden");
+
+function opensearch(){
+    visible.style.display = "none";
+    hidden.style.display = "flex";
+}
+
+search.addEventListener("click", opensearch)
